@@ -1,21 +1,28 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
+import video from "../../assets/videoplayback.mp4";
 
 export default function Hero() {
   return (
-    <section className="relative w-full min-h-[90vh] flex items-center justify-center bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage:
-          "url('https://images.unsplash.com/photo-1600607682581-50f3d7d6a5ee?q=80&w=1200&auto=format')"
-      }}
-    >
+    <section className="relative w-full min-h-[90vh] flex items-center justify-center overflow-hidden">
+
+      {/* Background Video */}
+      <video
+        src={video}
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/60"></div>
+      <div className="absolute inset-0 bg-black/50"></div>
 
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
         <h1 className="text-4xl md:text-6xl font-extrabold leading-tight drop-shadow-lg">
-          Villas de Mojados  
+          Villas de Mojados
         </h1>
 
         <p className="mt-4 text-lg md:text-xl font-light text-gray-200">
