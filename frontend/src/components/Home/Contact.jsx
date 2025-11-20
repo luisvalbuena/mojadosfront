@@ -79,9 +79,9 @@ export default function Contact() {
               <select
                 className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#0FA958] outline-none"
               >
-                <option>Villa 1 dormitorio</option>
                 <option>Villa 2 dormitorios</option>
                 <option>Villa 3 dormitorios</option>
+                <option>Villa 1 dormitorio</option>
                 <option>No lo tengo claro</option>
               </select>
             </div>
