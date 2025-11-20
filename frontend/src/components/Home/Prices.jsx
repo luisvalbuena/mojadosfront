@@ -1,5 +1,5 @@
 import React from "react";
-import { Calculator, Euro, Banknote } from "lucide-react";
+import { Calculator, Euro, Banknote, Wallet } from "lucide-react";
 
 export default function Prices() {
   return (
@@ -14,12 +14,12 @@ export default function Prices() {
 
           <p className="text-gray-600 mt-3">
             Accede a una villa moderna, eficiente y lista para personalizar, desde solo 120.000 €.  
-            Financiación disponible desde **350 €/mes**.
+            Financiación disponible desde <strong>350 €/mes</strong> y entrada desde <strong>15.000 €</strong>.
           </p>
         </div>
 
         {/* Cards Container */}
-        <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
 
           {/* Price Card */}
           <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-lg hover:shadow-2xl transition-all">
@@ -37,6 +37,25 @@ export default function Prices() {
 
             <p className="mt-4 text-gray-600 text-center">
               Villas modernas en parcelas privadas de 150 m².
+            </p>
+          </div>
+
+          {/* Down Payment Card */}
+          <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-lg hover:shadow-2xl transition-all">
+            <div className="flex justify-center mb-4">
+              <Wallet size={42} className="text-[#0FA958]" />
+            </div>
+
+            <h3 className="text-2xl font-semibold text-gray-800 text-center">
+              Entrada desde
+            </h3>
+
+            <p className="text-4xl font-bold text-[#0FA958] text-center mt-2">
+              15.000 €
+            </p>
+
+            <p className="mt-4 text-gray-600 text-center">
+              Aporta lo mínimo y financia cómodamente el resto.
             </p>
           </div>
 
